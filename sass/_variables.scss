@@ -1,0 +1,53 @@
+// colors
+$transparent-black-bg: rgba(0, 0, 0, 0.334);
+$light-black: rgba(0, 0, 0, 0.8);
+$blue: #45BBFF;
+$hover-blue: #3db3f7;
+
+// end of colors
+
+// boxes
+$width: 90vw;
+
+
+
+// ====================
+// ====================
+// MIXINS
+// ====================
+// ====================
+
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@mixin flex-space-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@mixin flex-align-center{
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin background-cover-center{
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+// ====================
+// ====================
+// END OF MIXINS
+// ====================
+// ====================

@@ -1,0 +1,71 @@
+.iti-hero {
+  background: url(../Travefy_images/travefy-beach-background-gradient.jpg);
+  background-size: cover;
+}
+
+.iti-hero .hero-left {
+  color: #fff;
+}
+
+.iti-hero .hero-left span {
+  letter-spacing: 1px;
+}
+
+.iti-hero .hero-left h2 {
+  font-size: 2.5rem;
+}
+
+.iti-hero .hero-left p {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.iti-hero .hero-left a {
+  background: transparent;
+  border: 2px solid;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.iti-hero .hero-left a:hover {
+  background: #fff;
+  color: #45BBFF;
+  border-color: #fff;
+}
+
+.iti-hero .hero-right img {
+  width: 100%;
+}
+
+.animated .animated-screen {
+  position: relative;
+}
+
+.animated .animated-screen img {
+  width: 100%;
+  position: absolute;
+}
+
+.animated .animated-screen .img-5 {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes fade {
+  to {
+    display: none;
+  }
+}
+
+@keyframes fade {
+  to {
+    display: none;
+  }
+}
+/*# sourceMappingURL=itinerary.css.map */

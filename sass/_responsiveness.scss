@@ -1,0 +1,109 @@
+
+
+// =====================================
+// =====================================
+//  TABLET ==> (768px)
+// =====================================
+// =====================================
+
+@media screen and (min-width: 768px) {
+
+    .mobile-links, #toggler{
+        display: none;
+    }
+
+    // LP MENU
+    .lp-menu{
+
+        display: block !important;
+    }
+    // END OF LP MENU
+
+    // HERO
+    .hero{
+        .hero-text{
+            width: 70%;
+            margin: auto;
+
+
+        }
+
+        .hero-bottom{
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: auto;
+
+            
+            &>div{
+                text-align: center;
+            }
+        }
+    }
+    // END OF HERO
+    
+
+    // PREVIEW
+    .preview-con{
+        flex-direction: row !important;
+
+        
+    }
+
+    .ordered-preview{
+        flex-direction: row-reverse !important;
+    }
+    // END OF PREVIEW
+
+
+    // FOOTER
+    .footer-links{
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+    // END OF FOOTER
+    
+
+}
+
+
+
+
+
+// =====================================
+// =====================================
+//  END OF TABLET ==> 
+// =====================================
+// =====================================
+
+
+
+
+
+
+
+
+
+
+
+// =====================================
+// =====================================
+//  LAPTOP ==> 
+// =====================================
+// =====================================
+
+
+@media screen and (min-width: 992px) {
+    // FOOTER
+    .footer-links{
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    // END OF FOOTER
+}
+
+
+
+
+
+// =====================================
+// =====================================
+//  END OF LAPTOP ==> 
+// =====================================
+// =====================================

@@ -1,0 +1,122 @@
+
+@import '_variables.scss';
+
+
+// ====================
+// ====================
+// ITINERARY HERO
+// ====================
+// ====================
+
+.iti-hero{
+    background: url(../Travefy_images/travefy-beach-background-gradient.jpg);
+    background-size: cover;
+
+    .hero-left{
+        color: #fff;
+
+        span{
+            letter-spacing: 1px;
+            
+        }
+
+        h2{
+            font-size: 2.5rem;
+            
+        }
+
+        p{
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        a{
+            background: transparent;
+            border: 2px solid;
+            transition: background 0.5s ease;
+        }
+
+        a:hover{
+            background: #fff;
+            color: $blue;
+            border-color: #fff;
+        }
+    }
+
+
+    // HERO RIGHT (ITINERARY)
+    .hero-right{
+
+        img{
+            width: 100%;
+        }
+    }
+    // END OF HERO RIGHT (ITINERARY)
+    
+}
+
+
+// =========================
+// =========================
+// END OF ITINERARY HERO
+// =========================
+// =========================
+
+
+
+
+
+
+
+
+
+// =========================
+// =========================
+// ANIMATED
+// =========================
+// =========================
+
+
+.animated{
+    
+    .animated-screen{
+        position: relative;
+
+        img{
+            width: 100%;
+            position: absolute;
+
+        }
+
+        .img-5{
+            animation-name: fade;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+            // display: none;
+        }
+
+
+
+    }
+}
+
+
+@keyframes fade {
+   to{
+    display: none;
+   }
+    
+}
+
+
+// =========================
+// =========================
+// END OF ANIMATED
+// =========================
+// =========================
+
+
+
+
