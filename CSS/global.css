@@ -305,7 +305,7 @@ header .header-con .header-right .lp-menu .lp-links .drop-down > * {
 }
 
 FOOTER {
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(160deg, #c09eda, #5fc4ff);
   margin-top: 3rem;
   padding-bottom: 2rem;
 }
