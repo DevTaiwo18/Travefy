@@ -1,10 +1,20 @@
 .iti-hero {
-  background: url(../Travefy_images/travefy-beach-background-gradient.jpg);
+  background: linear-gradient(160deg, #45bbff 30%, #e869a6);
   background-size: cover;
+  padding: 0;
+}
+
+.iti-hero .iti-hero-wrapper {
+  background: url(../Travefy_images/white-bg-arch.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  padding: 8rem 0 2rem;
 }
 
 .iti-hero .hero-left {
   color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .iti-hero .hero-left span {
@@ -23,6 +33,7 @@
 .iti-hero .hero-left a {
   background: transparent;
   border: 2px solid;
+  margin: auto;
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
@@ -37,35 +48,61 @@
   width: 100%;
 }
 
-.animated .animated-screen {
-  position: relative;
+.iti-trusted {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)), to(#d4e6f1)), url(../Travefy_images/1-Background-map.png);
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 0.45), #d4e6f1), url(../Travefy_images/1-Background-map.png);
+  background-size: 100%;
+  background-position: center;
+  padding: 3rem 0;
+  background-repeat: no-repeat;
 }
 
-.animated .animated-screen img {
-  width: 100%;
-  position: absolute;
+.iti-trusted > * {
+  background: url(../Travefy_images/3-Customer-Background.png);
+  background-size: contain;
+  background-position: center;
+  padding: 4rem 0;
+  background-repeat: no-repeat;
 }
 
-.animated .animated-screen .img-5 {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+.iti-trusted > * .text {
+  width: 90vw;
+  margin: auto;
+  text-align: center;
 }
 
-@-webkit-keyframes fade {
-  to {
-    display: none;
-  }
+.iti-trusted > * .text h2 {
+  color: #2C3E50;
+  margin-bottom: 2rem;
 }
 
-@keyframes fade {
-  to {
-    display: none;
-  }
+.iti-trusted > * .text a {
+  display: inline;
+  background: transparent;
+  color: #45BBFF;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  padding: 1.2rem 1.7rem;
+}
+
+.iti-trusted > * .text a:hover {
+  background: #45BBFF;
+  color: #fff;
+}
+
+.iti-preview {
+  padding-bottom: 0 !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #d4e6f1), to(#a6ddf0));
+  background: linear-gradient(180deg, #d4e6f1 30%, #a6ddf0);
+}
+
+.iti-preview .preview h2 {
+  font-weight: 100;
+  font-size: 2.5rem !important;
+}
+
+.iti-preview .preview img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=itinerary.css.map */

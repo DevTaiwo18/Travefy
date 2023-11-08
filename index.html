@@ -15,6 +15,7 @@
 
 
     <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
     <!-- botstrap -->
 
@@ -32,19 +33,20 @@
         <section class="header-con">
 
             <!-- header left -->
-            <div class="header-left">
+            <a href="./index.html" class="header-left">
+                <img src="./Travefy_images/travefy-header-logo.png" alt="Travefy logo image">
                 <h1>Travefy</h1>
-            </div>
+            </a>
             <!-- end of header left -->
 
             <!-- header right-->
             <section class="header-right">
 
-                <span id="toggler" onmouseover="mobileMenu('show')">=</span>
+                <span id="toggler" onmouseover="mobileMenu('show')"><i class="fa-solid fa-bars" style="color: #fff; font-size: 1.5rem;"></i></span>
 
                 <!-- mobile links -->
                 <ul class="mobile-links" onmouseout="mobileMenu('unShow')">
-                    <!-- TODO: ADD LINKS -->
+
                     <a href="./pages/itinerary.html">
                         <li>Itineray Management</li>
                     </a>
@@ -65,7 +67,7 @@
                         <li>Sign In</li>
                     </a>
 
-                    <a href="./pages/trial.html">
+                    <a href="./pages/trial.html" class="mobile-cta">
                         <li>Start Free Trial</li>
                     </a>
 
@@ -87,20 +89,20 @@
                             <!--  drop down -->
                             <ul class="drop-down" id="first-drop-down" onmouseover="lpMenu('showFirst')" onmouseleave="lpMenu('unshowFirst')">
                                 <!-- TODO: ADD LINKS -->
-                                <a href="">
+                                <a href="./pages/itinerary.html">
                                     <li>Itineray Management</li>
                                 </a>
 
-                                <a href="">
-                                    <li>Itineray Management</li>
+                                <a href="./pages/proposals.html">
+                                    <li>Proposals + Quotes</li>
                                 </a>
 
-                                <a href="">
-                                    <li>Itineray Management</li>
+                                <a href="/pages/simple-crm.html">
+                                    <li>Simple CRM + Forms</li>
                                 </a>
 
-                                <a href="">
-                                    <li>Itineray Management</li>
+                                <a href="./pages/website.html">
+                                    <li>Website + Marketing</li>
                                 </a>
                             </ul>
                             <!-- end of drop down -->
@@ -112,20 +114,24 @@
 
                             <!--  drop down -->
                             <ul class="drop-down"  id="second-drop-down" onmouseover="lpMenu('showSecond')" onmouseleave="lpMenu('unshowSecond')">
-                                <a href="">
-                                    <li>Itineray Management</li>
+                                <a href="./pages/error.html">
+                                    <li>Travel Advisors</li>
                                 </a>
 
-                                <a href="">
-                                    <li> Management</li>
+                                <a href="./pages/error.html">
+                                    <li>Tour Operators</li>
                                 </a>
 
-                                <a href="">
-                                    <li>Itineray Management</li>
+                                <a href="./pages/error.html">
+                                    <li>DMCs + Onsites</li>
                                 </a>
 
-                                <a href="">
-                                    <li>Itineray Management</li>
+                                <a href="./pages/error.html">
+                                    <li>Tourism + DMOs</li>
+                                </a>
+
+                                <a href="./pages/error.html">
+                                    <li>Host Agencies</li>
                                 </a>
                             </ul>
                             <!-- end of drop down -->
@@ -177,8 +183,8 @@
         <section class="hero-con">
             <!-- hero text -->
             <section class="hero-text">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magni et</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Helping travel professionals save time and impress clients.</h2>
+                <p>Start winning more clients using our simple tools.</p>
                 <a href="./pages/trial.html" class="btn hero-btn hover-blue-btn">start free trial</a>
             </section>
             <!-- end of hero text -->
@@ -216,8 +222,12 @@
 
     <!-- TRUSTED -->
     <section class="trusted">
-        <img src="./Travefy_images/travefy-platform-suite-hero.png" alt="">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, molestias?</h2>
+        <!-- trusted container -->
+        <section class="trusted-con">
+            <img src="./Travefy_images/travefy-platform-suite-hero.png" alt="">
+            <h2>The award-winning platform trusted by thousands of travel brands worldwide.</h2>
+        </section>
+        <!-- end of trusted container -->
     </section>
     <!-- END OF TRUSTED -->
 
@@ -228,8 +238,7 @@
 
 
 
-
-
+    <section class="previews">
 
     <!-- ITINERARY MANAGEMENT (PREVIEW 1) -->
     <section class="preview">
@@ -245,9 +254,7 @@
             <!-- preview right -->
             <section class="preview-right">
                 <h2>Itinerary Managemnt</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloremque assumenda dolore
-                    explicabo aspernatur velit officia nemo nam qui aliquam, molestias, delectus natus, praesentium
-                    unde?</p>
+                <p>The must-have tools for any travel advisor delivering delight to your clients with customized itineraries in your brand. Save valuable time importing from limitless integrated suppliers, destination content, photo libraries and more. Deliver itineraries to your clients via mobile app, web link or PDF.</p>
                 <a href="./pages/itinerary.html" class="btn preview-btn">Learn More</a>
             </section>
             <!-- end of preview right -->
@@ -267,8 +274,8 @@
 
     <!-- DIVIDER (L TO R) -->
     <section class="divider">
-        <img src="./Travefy_images/" alt="divider image ">
-        <h1>------------------------</h1>
+        <img src="./Travefy_images/dots-left-to-right.svg" alt="divider image ">
+        
     </section>
     <!-- END OF DIVIDER (L TO R) -->
 
@@ -295,10 +302,8 @@
 
             <!-- preview right -->
             <section class="preview-right">
-                <h2>Itinerary Managemnt</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloremque assumenda dolore
-                    explicabo aspernatur velit officia nemo nam qui aliquam, molestias, delectus natus, praesentium
-                    unde?</p>
+                <h2>Quotes + Proposals</h2>
+                <p>Close more sales with professional, visually stunning quotes and proposals. Travefy's streamlined workflows save you time and help you maximize your sales efforts.</p>
                 <a href="./pages/proposals.html" class="btn preview-btn">Learn More</a>
             </section>
             <!-- end of preview right -->
@@ -318,8 +323,7 @@
 
     <!-- DIVIDER (R TO L) -->
     <section class="divider">
-        <img src="./Travefy_images/" alt="divider image ">
-        <h1>------------------------</h1>
+        <img src="./Travefy_images/dots-right-to-left.svg" alt="divider image">
     </section>
     <!-- END OF DIVIDER (R TO L) -->
 
@@ -351,9 +355,7 @@
             <!-- preview right -->
             <section class="preview-right">
                 <h2>Simple CRM + Forms + Tasks</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloremque assumenda dolore
-                    explicabo aspernatur velit officia nemo nam qui aliquam, molestias, delectus natus, praesentium
-                    unde?</p>
+                <p>Drop your complicated, out-of-date CRM. Organize your client information and workflows with Travefy's simple CRM. Collect client details and credit card authorization forms effortlessly using custom form tools.</p>
                 <a href="./pages/simple-crm.html" class="btn preview-btn">Learn More</a>
             </section>
             <!-- end of preview right -->
@@ -372,6 +374,9 @@
 
 
     <!-- DIVIDER (L TO R) -->
+    <section class="divider">
+        <img src="./Travefy_images/dots-left-to-right.svg" alt="divider image">
+    </section>
     <!-- END OF DIVIDER (L TO R) -->
 
 
@@ -402,9 +407,7 @@
             <!-- preview right -->
             <section class="preview-right">
                 <h2>Website + Landing Pages</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloremque assumenda dolore
-                    explicabo aspernatur velit officia nemo nam qui aliquam, molestias, delectus natus, praesentium
-                    unde?</p>
+                <p>Attract new business and capture new clients. Create a top-notch, mobile-friendly website in minutes with Travefy's integrated website and landing page builder. Market your trips on social media or launch your free marketing profile.</p>
                 <a href="./pages/website.html" class="btn preview-btn">Learn More</a>
             </section>
             <!-- end of preview right -->
@@ -415,9 +418,94 @@
     <!-- END OF WEBSITE + LANDING (PREVIEW 4) -->
 
 
+    </section>
+
+
 
 
     <!-- PRICING -->
+    <section class="pricing">
+        
+        <!-- pricing container -->
+        <section class="pricing-con">
+            <section class="title">
+                <h2>Sign up in seconds to start using the magic.</h2>
+                 <h3> Your clients are going to be so impressed! </h3>
+            </section>
+
+            <!-- packages -->
+            <section class="packages">
+                <!-- FIRST package -->
+                <section class="package">
+
+                    
+                    <div class="header"><h2>Monthly</h2></div>
+
+                    <div class="body">
+                        <h2 class="price">39</h2>
+                        <p>Per User Per Month, Billed Monthly</p>
+                        
+                        <ul>
+                            <li>Unlimited Proposals</li>
+                            <li>Unlimited Itineraries</li>
+                            <li>Every Travefy Feature</li>
+                        </ul>
+
+                        <a href="./pages/trial.html" class="btn">start free trial</a>
+
+                        <p>10-day trial. No card required!</p>
+                    </div>
+                
+                </section>
+                <!-- end of FIRST package -->
+
+                <!-- SECOND package -->
+                <section class="second-package package">
+                    
+                    <div class="header"><h2>Annually</h2></div>
+
+                    <div class="body">
+                        <h2 class="price">31</h2>
+                        <p>Per User Per Month, Billed Annually</p>
+                        <span> That's a total savings of $96 per year!</span>
+                        
+                        <ul>
+                            <li>Unlimited Proposals</li>
+                            <li>Unlimited Itineraries</li>
+                            <li>Every Travefy Feature</li>
+                        </ul>
+
+                        <a href="./pages/trial.html" class="btn">start free trial</a>
+
+                        <p>10-day trial. No card required!</p>
+                    </div>
+                
+                </section>
+                <!-- end of SECOND package -->
+
+                
+            </section>
+            <!-- end of packages -->
+
+            <!-- pricing discount -->
+            <section class="discount">
+                <span> Pay as little as $22 Per User Per Month With Team Discounts!</span>
+                <div>
+                    <p> All prices shown in USD.</p>
+                    <p> Some features have usage limits.</p>
+                </div>
+                <a href="./pages/error.html">View a detailed list of travefy features and usage limits here.</a>
+
+
+            </section>
+            <!-- end of pricing discount -->
+        </section>
+        <!-- end of pricing container -->
+
+        
+
+
+    </section>
     <!-- END OF PRICING -->
 
 
@@ -450,7 +538,7 @@
                             <li>Simple CRM + Forms</li>
                         </a>
 
-                        <a href="./pages/itinerary.html">
+                        <a href="./pages/website.html">
                             <li>Website + Marketing</li>
                         </a>
 
@@ -465,128 +553,144 @@
                 </div>
 
                 <div>
-                    <h3>Solutions</h3>
+                    <h3>Support</h3>
                     <ul>
-                        <a href="./pages/itinerary.html">
-                            <li>Itinerary Management</li>
-                        </a>
-
-                        <a href="./pages/proposals.html">
-                            <li>Proposals + Quotes</li>
-                        </a>
-
-                        <a href="./pages/simple-crm.html">
-                            <li>Simple CRM + Forms</li>
-                        </a>
-
-                        <a href="./pages/itinerary.html">
-                            <li>Website + Marketing</li>
+                        <a href="./pages/error.html">
+                            <li>Support</li>
                         </a>
 
                         <a href="./pages/error.html">
-                            <li>Trip Plans Mobile App</li>
+                            <li>Certification</li>
                         </a>
 
                         <a href="./pages/error.html">
-                            <li>White Labels</li>
+                            <li>FAQs</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>API Documentation</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Contact Us</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Forgot Password</li>
                         </a>
                     </ul>
                 </div>
 
                 <div>
-                    <h3>Solutions</h3>
+                    <h3>Company</h3>
                     <ul>
-                        <a href="./pages/itinerary.html">
-                            <li>Itinerary Management</li>
-                        </a>
-
-                        <a href="./pages/proposals.html">
-                            <li>Proposals + Quotes</li>
-                        </a>
-
-                        <a href="./pages/simple-crm.html">
-                            <li>Simple CRM + Forms</li>
-                        </a>
-
-                        <a href="./pages/itinerary.html">
-                            <li>Website + Marketing</li>
+                        <a href="./pages/error.html">
+                            <li>About</li>
                         </a>
 
                         <a href="./pages/error.html">
-                            <li>Trip Plans Mobile App</li>
+                            <li>The Team</li>
                         </a>
 
                         <a href="./pages/error.html">
-                            <li>White Labels</li>
+                            <li>Careers</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Careerss</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Agent Reviews</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>CAse Studies</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Press Information</li>
                         </a>
                     </ul>
                 </div>
 
 
-                <div>
-                    <h3>Solutions</h3>
-                    <ul>
-                        <a href="./pages/itinerary.html">
-                            <li>Itinerary Management</li>
-                        </a>
-
-                        <a href="./pages/proposals.html">
-                            <li>Proposals + Quotes</li>
-                        </a>
-
-                        <a href="./pages/simple-crm.html">
-                            <li>Simple CRM + Forms</li>
-                        </a>
-
-                        <a href="./pages/itinerary.html">
-                            <li>Website + Marketing</li>
-                        </a>
-
-                        <a href="./pages/error.html">
-                            <li>Trip Plans Mobile App</li>
-                        </a>
-
-                        <a href="./pages/error.html">
-                            <li>White Labels</li>
-                        </a>
-                    </ul>
-                </div>
-
-
-                <div>
-                    <h3>Solutions</h3>
-                    <ul>
-                        <a href="./pages/itinerary.html">
-                            <li>Itinerary Management</li>
-                        </a>
-
-                        <a href="./pages/proposals.html">
-                            <li>Proposals + Quotes</li>
-                        </a>
-
-                        <a href="./pages/simple-crm.html">
-                            <li>Simple CRM + Forms</li>
-                        </a>
-
-                        <a href="./pages/itinerary.html">
-                            <li>Website + Marketing</li>
-                        </a>
-
-                        <a href="./pages/error.html">
-                            <li>Trip Plans Mobile App</li>
-                        </a>
-
-                        <a href="./pages/error.html">
-                            <li>White Labels</li>
-                        </a>
-                    </ul>
-                </div>
-
-
-                <div>
+                <!-- SOCIAL IMAGES -->
+                <div class="footer-imgs">
                     <!-- TODO: Add social images -->
-                    <h1>social images</h1>
+                   <section>
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                   </section>
+
+                   <section>
+                    <img src="./Travefy_images/Travefy-pci-dss-compliant-logo.png" alt="">
+                   </section>
                 </div>
+                <!-- END OF SOCIAL IMAGES -->
+
+
+                <div>
+                    <h3>Solutions</h3>
+                    <ul>
+                        <a href="./pages/itinerary.html">
+                            <li>Itinerary Management</li>
+                        </a>
+
+                        <a href="./pages/proposals.html">
+                            <li>Proposals + Quotes</li>
+                        </a>
+
+                        <a href="./pages/simple-crm.html">
+                            <li>Simple CRM + Forms</li>
+                        </a>
+
+                        <a href="./pages/itinerary.html">
+                            <li>Website + Marketing</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Trip Plans Mobile App</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>White Labels</li>
+                        </a>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3>Solutions</h3>
+                    <ul>
+                        <a href="./pages/itinerary.html">
+                            <li>Itinerary Management</li>
+                        </a>
+
+                        <a href="./pages/proposals.html">
+                            <li>Proposals + Quotes</li>
+                        </a>
+
+                        <a href="./pages/simple-crm.html">
+                            <li>Simple CRM + Forms</li>
+                        </a>
+
+                        <a href="./pages/itinerary.html">
+                            <li>Website + Marketing</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>Trip Plans Mobile App</li>
+                        </a>
+
+                        <a href="./pages/error.html">
+                            <li>White Labels</li>
+                        </a>
+                    </ul>
+                </div>
+
 
                 <div>
                     <h3>Discover</h3>
@@ -605,7 +709,7 @@
 
         <!-- footer bottom -->
         <section class="footer-bottom">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem nam quam reiciendis dolorem distinctio labore dolores pariatur ex fugit rerum perspiciatis libero fugiat necessitatibus, deserunt dolore explicabo blanditiis quia!</p>
+            <p>© 2012 - 2023 Travefy, Inc. All rights reserved. Terms of Use, Privacy Policy, & Other Policies.</p>
         </section>
         <!-- end of footer bottom -->
 

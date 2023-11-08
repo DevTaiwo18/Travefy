@@ -2,6 +2,45 @@
 @import '_variables.scss';
 
 
+
+
+
+// ====================
+// ====================
+// ITINERARY HEADER
+// ====================
+// ====================
+
+
+
+
+
+
+
+
+
+// ====================
+// ====================
+// END OF ITINERARY HEADER
+// ====================
+// ====================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ====================
 // ====================
 // ITINERARY HERO
@@ -9,11 +48,25 @@
 // ====================
 
 .iti-hero{
-    background: url(../Travefy_images/travefy-beach-background-gradient.jpg);
+    background: linear-gradient(160deg,#45bbff 30%,#e869a6);
     background-size: cover;
+    padding: 0;
+
+    .iti-hero-wrapper{
+        background: url(../Travefy_images/white-bg-arch.png);
+        height: 100%;
+        // @include background-cover-center;
+        background-repeat: no-repeat;
+        padding: 8rem 0 2rem;
+        
+    }
+
+    
 
     .hero-left{
         color: #fff;
+        margin-bottom: 2rem;
+        text-align: center;
 
         span{
             letter-spacing: 1px;
@@ -33,6 +86,7 @@
         a{
             background: transparent;
             border: 2px solid;
+            margin: auto;
             transition: background 0.5s ease;
         }
 
@@ -46,6 +100,7 @@
 
     // HERO RIGHT (ITINERARY)
     .hero-right{
+        // width: 50%;
 
         img{
             width: 100%;
@@ -72,50 +127,124 @@
 
 // =========================
 // =========================
-// ANIMATED
+// ITINERARY TRUSTED
 // =========================
 // =========================
 
 
-.animated{
-    
-    .animated-screen{
-        position: relative;
 
-        img{
-            width: 100%;
-            position: absolute;
+
+
+
+.iti-trusted{
+    background: linear-gradient(-180deg,rgba(255,255,255,.45),#d4e6f1), url(../Travefy_images/1-Background-map.png);
+    background-size: 100%;
+    background-position: center;
+    // margin-top: 3rem;
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+
+    &>*{
+        background: url(../Travefy_images/3-Customer-Background.png);
+        background-size: contain;
+        background-position: center;
+        padding: 4rem 0;
+        background-repeat: no-repeat;
+        
+        .text{
+            width: $width;
+            margin: auto;
+            text-align: center;
+
+            h2{
+                color: $light-black;
+                // font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            a{
+                display: inline;
+                background: transparent;
+                color: $blue;
+                transition: background 0.5s ease;
+                padding: 1.2rem 1.7rem;
+            }
+
+            a:hover{
+                background: $blue;
+                color: #fff;
+            }
 
         }
-
-        .img-5{
-            animation-name: fade;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            
-            // display: none;
-        }
-
-
-
     }
 }
 
 
-@keyframes fade {
-   to{
-    display: none;
-   }
-    
+
+
+
+
+
+
+
+// =========================
+// =========================
+// END OF ITINERARY TRUSTED
+// =========================
+// =========================
+
+
+
+
+
+
+
+
+
+// =============================
+// =============================
+// ITINERARY PREVIEW
+// =============================
+// =============================
+
+
+.iti-preview{
+    padding-bottom: 0 !important;
+    background: linear-gradient(180deg,#d4e6f1 30%,#a6ddf0);
+
+    .preview{
+        // padding: 2rem 0;
+
+
+        
+        h2{
+            font-weight: 100;
+            font-size: 2.5rem !important;
+        }
+
+        img{
+            object-fit: cover;
+        }
+    }
 }
 
 
-// =========================
-// =========================
-// END OF ANIMATED
-// =========================
-// =========================
+
+
+// =============================
+// =============================
+// END OF ITINERARY PREVIEW
+// =============================
+// =============================
+
+
+
+
+
+
+
+
+
 
 
 

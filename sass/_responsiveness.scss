@@ -8,6 +8,13 @@
 
 @media screen and (min-width: 768px) {
 
+    .header-con{
+        @include flex-space-center; 
+        gap: 0 !important;
+        justify-content: space-between !important;
+        
+    }
+
     .mobile-links, #toggler{
         display: none;
     }
@@ -24,8 +31,14 @@
         .hero-text{
             width: 70%;
             margin: auto;
+            
+            h2{
+                font-size: 3rem !important;
+            }
 
-
+            p{
+                font-size: 1.5rem;
+            }
         }
 
         .hero-bottom{
@@ -45,6 +58,15 @@
     .preview-con{
         flex-direction: row !important;
 
+
+        .preview-right{
+            width: 70%;
+        }
+
+        .preview-left{
+            width: 50%;
+        }
+
         
     }
 
@@ -54,11 +76,133 @@
     // END OF PREVIEW
 
 
+    // PRICING
+
+    
+
+    .packages{
+        @include flex-center-center;
+        gap: 0 !important;
+
+        .package{
+            margin: .5rem !important;
+        }
+    }
+    // END OF PRICING
+
+
+
+    // ANIMATED
+    .animated{
+
+        .animated-con{
+            flex-direction: row !important;
+            
+
+            .animated-screen, .animated-options{
+                width: 50% !important;
+
+                img{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    // END OF ANIMATED
+
+
+
     // FOOTER
     .footer-links{
         grid-template-columns: 1fr 1fr 1fr !important;
     }
     // END OF FOOTER
+
+
+    // ====================
+    // ====================
+    //  END OF GLOBAL
+    // ====================
+    // ====================
+
+
+    // ITI HERO
+    .iti-hero-con{
+        display: flex;
+
+
+        .hero-left{
+            text-align: start !important;
+
+            a{
+                margin: 0 !important;
+            }
+        }
+
+        
+    }
+    // END OF ITI HERO
+
+
+    .iti-trusted{
+
+        .text{
+            width: 70%;
+            margin: auto;
+            
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+    .preview-1{
+        margin-right: 0 !important;
+    }
+
+    // ITINERARY PREVIEW CON
+    .preview-con{
+        width: $width !important;
+        
+        gap: 0 !important;
+
+        
+       
+
+        .preview-left{
+            // width: 80% !important;
+            // height: 500px !important;
+            img{
+                // height: 100%;
+                object-fit: contain!important;
+            }
+        }
+
+        .preview-right{
+            width: 50% !important;
+        }
+    }
+    // END OF ITITNERARY PREVIEW
+
+
+    .samples-con{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    // END OF SAMPLES
+
+
+
+
+    //====================
+    // END OF ITINERARY PAGE
+    //====================
+
+
+    
     
 
 }
@@ -91,7 +235,87 @@
 
 
 @media screen and (min-width: 992px) {
-    // FOOTER
+
+
+    // ==========================
+    // ==========================
+    //  GLOBAL
+    // ==========================
+    // ==========================
+
+
+    .preview{
+        .preview-2{
+            width: 70vw !important;
+            
+    
+            }
+    }
+
+
+
+    // animated
+    .animated-con{
+        width: 70vw !important;
+    }
+    // end of animated
+
+
+
+     // ==========================
+    // ==========================
+    //  END OF GLOBAL
+    // ==========================
+    // ==========================
+
+
+
+
+
+    .iti-header-con{
+        width: 70vw !important;
+        // border: red 2px solid;
+    }
+
+    .iti-hero-wrapper{
+        background-position: right 0 top -20rem !important;
+    }
+
+    .iti-hero-con{
+        
+        width: 70vw !important;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .hero-right{
+            width: 50%;
+        }
+    }
+
+
+    // ITI TRUSTED
+
+    .iti-trusted{
+
+        .text{
+            width: 60% !important;
+            // margin: auto;
+        }
+    }
+
+    .proposals-hero{
+
+        .hero-right{
+            width: 700px !important;
+
+
+        }
+    }
+
+
+
+    FOOTER
     .footer-links{
         grid-template-columns: repeat(4, 1fr) !important;
     }

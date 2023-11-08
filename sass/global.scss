@@ -58,17 +58,26 @@ header{
 
     // header container
     .header-con{
-        width: 95vw;
+        width: $width;
         position: relative;
         margin: auto !important;
         padding: 1.3rem 0;
-        @include flex-space-center;
+        @include flex-align-center;
+        gap: 40%;
+        justify-content: end;
 
         
 
         // header left
         .header-left{
-            color: #fff;
+            @include flex-center-center;
+            img{
+                width: 30px;
+            }
+
+            h1{
+                color: #fff;
+            }
         }
         // end of header left
 
@@ -79,10 +88,13 @@ header{
             // mobile menu
 
             #toggle{
-                font-size: 1.5rem;
-                color: #fff;
-                display: block;
-                background: red;
+                
+                i{
+                    font-size: 1.5rem;
+                    color: #fff;
+                    display: block;
+                    background: red;
+                }
 
             }
 
@@ -103,8 +115,19 @@ header{
 
                 a{
                     display: block;
-                    padding: 1rem 1.5rem;
-                    border-bottom: 1px solid;
+                    padding: 1.5rem 3rem 1.5rem 1.5rem;
+                    color: #0000007a;
+                    transition: background 0.8s ease, color 0.8s ease;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+                }
+
+                a:hover{
+                    color: $deep-blue;
+                    background-color: $light-blue;
+                }
+
+                .mobile-cta{
+                    font-weight: bold;
                 }
 
                 
@@ -153,11 +176,18 @@ header{
                         overflow: hidden;
                         transition: height 0.5s ease;
                         background: #fff;
+                        border-radius: 8px;
 
                         &>*{
                             display: block;
                             padding: 1rem 1.5rem;
-                            border-bottom: 1px solid;
+                            border-bottom: 1px solid $light-blue;
+                            color: $light-black;
+                        }
+
+                        &>*:hover{
+                            color: $deep-blue;
+                            background-color: $light-blue;
                         }
                         
                     }
@@ -221,6 +251,7 @@ header{
 
             h2{
                 font-size: 2rem;
+                font-weight: 100;
             }
 
             p{
@@ -270,6 +301,11 @@ header{
 
 
 
+.crm-hero{
+    background: linear-gradient(160deg,#09e2a7 30%,#8f52ea) !important;
+}
+
+
 // =================================
 // =================================
 // END OF HERO
@@ -287,6 +323,168 @@ header{
 
 
 
+
+// ====================
+// ====================
+// ITINERARY HERO
+// ====================
+// ====================
+
+.iti-hero{
+    background: linear-gradient(160deg,#45bbff 30%,#e869a6);
+    background-size: cover;
+    padding: 0;
+
+    .iti-hero-wrapper{
+        background: url(../Travefy_images/white-bg-arch.png);
+        height: 100%;
+        // @include background-cover-center;
+        background-repeat: no-repeat;
+        padding: 8rem 0 2rem;
+        
+    }
+
+    
+
+    .hero-left{
+        color: #fff;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        span{
+            letter-spacing: 1px;
+            
+        }
+
+        h2{
+            font-size: 2.5rem;
+            
+        }
+
+        p{
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        a{
+            background: transparent;
+            border: 2px solid;
+            margin: auto;
+            transition: background 0.5s ease;
+        }
+
+        a:hover{
+            background: #fff;
+            color: $blue;
+            border-color: #fff;
+        }
+    }
+
+
+    // HERO RIGHT (ITINERARY)
+    .hero-right{
+        // width: 50%;
+
+        img{
+            width: 100%;
+        }
+    }
+    // END OF HERO RIGHT (ITINERARY)
+    
+}
+
+
+.proposals-hero{
+    background:  linear-gradient(200deg,#872bd4 30%,#e59e6a) !important;
+}
+
+// =========================
+// =========================
+// END OF ITINERARY HERO
+// =========================
+// =========================
+
+
+
+
+
+
+// =========================
+// =========================
+// ITINERARY TRUSTED
+// =========================
+// =========================
+
+
+
+
+
+
+.iti-trusted{
+    background: linear-gradient(-180deg,rgba(255,255,255,.45),#d4e6f1), url(../Travefy_images/1-Background-map.png);
+    background-size: 100%;
+    background-position: center;
+    // margin-top: 3rem;
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+
+    &>*{
+        background: url(../Travefy_images/3-Customer-Background.png);
+        background-size: contain;
+        background-position: center;
+        padding: 4rem 0;
+        background-repeat: no-repeat;
+        
+        .text{
+            width: $width;
+            margin: auto;
+            text-align: center;
+
+            h2{
+                color: $light-black;
+                // font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            a{
+                display: inline;
+                background: transparent;
+                color: $blue;
+                transition: background 0.5s ease;
+                padding: 1.2rem 1.7rem;
+            }
+
+            a:hover{
+                background: $blue;
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// =========================
+// =========================
+// END OF ITINERARY TRUSTED
+// =========================
+// =========================
+
+
+
+
+
+
+
+
+
 // =================================
 // =================================
 // TRUSTED
@@ -295,23 +493,41 @@ header{
 
 
 .trusted{
-    width: $width;
-    margin: 0 auto;
+    
+    margin: 0 auto 2rem;
+    background: linear-gradient(-180deg,#d1eef7,#fff);
     padding: 3rem 0;
     text-align: center;
 
+    .trusted-con{
+        width: $width;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    h2{
+        color: $light-black;
+        font-size: 1.9rem;
+        width: 70%;
+        margin: auto;
+        
+    }
         img{
             width: 100%;
+            margin: auto;
         }
+
+
 }
 
 
 
-// =================================
-// =================================
+// ================================
+// ================================
 // END OF TRUSTED
-// =================================
-// =================================
+// ================================
+// ===============================
 
 
 
@@ -331,6 +547,10 @@ header{
 
 
     .preview{
+        padding: 2rem 0;
+
+
+        
 
         .preview-con{
             width: 90vw;
@@ -339,16 +559,23 @@ header{
             gap: 2rem;
             flex-direction: column;
             align-items: center;
+            
 
-            img{
-                width: 100%;
+            .preview-left{
+                // width: 100%;
+
+                img{
+                    width: 100%;
+                }
             }
 
             .preview-right{
+                // width: 70%;
 
                 h2{
-                    font-size: 2.5rem;
-                    
+                    font-size: 3rem;
+                    color: $light-black;
+                    font-weight: 100;
                 }
 
                 p{
@@ -374,6 +601,11 @@ header{
         }
     }
 
+    .divider{
+        width: 50vw;
+        margin: auto;
+    }
+
 
 
 // =================================
@@ -381,6 +613,930 @@ header{
 // END OF PREVIEW
 // =================================
 // =================================
+
+
+
+
+
+
+
+
+
+//=======================
+//=======================
+// ITINERARY PREVIEW
+//=======================
+//=======================
+
+
+.iti-preview{
+    padding-bottom: 0 !important;
+    background: linear-gradient(180deg,#d4e6f1 30%,#a6ddf0);
+
+    .preview{
+        // padding: 2rem 0;
+
+
+        
+        h2{
+            font-weight: 100;
+            font-size: 2.5rem !important;
+        }
+
+        img{
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+//==========================
+//==========================
+// END OF ITINERARY PREVIEW
+//==========================
+//==========================
+
+
+
+
+
+
+
+
+
+
+
+
+// =================================
+// =================================
+// ANIMATED
+// =================================
+// =================================
+
+
+
+.animated{
+    padding: 5rem 0;
+
+    &>h2{
+        font-size: 3rem;
+        font-weight: 100;
+        color: $light-black;
+        text-align: center;
+    }
+
+    
+    .animated-con{
+        width: $width;
+        margin: 4rem auto 0;
+        @include flex-align-center;
+        flex-direction: column;
+        gap: 3rem;
+
+        // animated screen
+        .animated-screen{
+            position: relative;
+            height: 500px;
+            width: 100%;
+
+            // animated images
+            img{
+                position: absolute;
+                width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+            // end of animated images
+        }
+        // end of animateds screen
+
+
+        // animated options
+        .animated-options{
+            
+            
+            // option
+            .option{
+                padding: 1rem;
+                // border: $light-blue 2px solid;
+                border-radius: 10px;
+                transition: background .8s ease;
+                cursor: pointer;
+                margin: 5px 0;
+                line-height: 1.4;
+                color: $light-black;
+
+                h3{
+                    font-size: 1.3rem;
+                }
+
+                p{
+                    font-size: 1.03rem;
+                }
+            }
+
+            
+            // end of option
+        }
+        // end of animated options
+
+
+        // animation
+        img, .option{
+            animation-duration: 15s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite ;
+        }
+
+        // image & option 1
+        .img-1{
+            z-index: 5;
+            animation-name: img-1;
+        }
+
+        @keyframes img-1 {
+            0%{
+                opacity: 100%;
+            }
+        
+            10%{
+                opacity: 100%;
+            }
+        
+            20%{
+               
+                 opacity: 0;
+               
+            }
+        
+            80%{
+                opacity: 0;
+            }
+        
+            90%{
+                opacity: 100%;
+            }
+        
+        
+           100%{
+            opacity: 100%;
+           }
+        }
+         
+
+        .option-1{
+            animation-name: option-1;
+        }
+        
+
+        @keyframes option-1 {
+            0%{
+                background: $light-blue;
+                
+            }
+        
+            10%{
+                background: $light-blue;
+                
+            }
+        
+        
+            20%{
+                background-color: white;
+                border: none;
+            }
+        
+            80%{
+                background-color: white;
+                border: none;
+            }
+        
+            90%{
+                background: $light-blue;
+                
+            }
+            100%{
+                background: $light-blue;
+                
+            }
+        }
+        // end of image & option 1
+
+
+        // image & option 2
+        .img-2{
+            z-index: 4;
+            animation-name: img-2;
+        }
+
+        @keyframes img-2 {
+            0%{
+                opacity: 100%;
+            }
+        
+            30%{
+               
+                 opacity: 100%;
+               
+            }
+        
+            40%{
+                opacity: 0;
+            }
+
+        
+        
+           100%{
+            opacity: 0;
+           }
+        }
+
+        .option-2{
+            animation-name: option-2;
+        }
+
+        @keyframes option-2 {
+           
+            10%{
+                
+                background-color: white;
+            }
+        
+            19%{
+                border: none;
+            }
+        
+            20%{
+                background: $light-blue;
+                
+            }
+
+            30%{
+                background: $light-blue;
+                
+            }
+
+            40%{
+                background-color: #fff;
+                border: none;
+            }
+
+            100%{
+                background-color: white;
+            }
+        
+            
+        }
+        // end of image & option 2
+
+        // image & option 3
+        .img-3{
+            z-index: 3;
+            animation-name: img-3;
+        }
+
+        @keyframes img-3 {
+            0%{
+                opacity: 100%;
+            }
+        
+            20%{
+                opacity: 100%;
+            }
+        
+            40%{
+                opacity: 100%;
+            }
+        
+        
+            45%{
+                opacity: 100%;
+            }
+        
+            50%{
+                opacity: 100%;
+            }
+        
+            60%{
+                opacity: 0;
+            }
+        
+            100%{
+                opacity: 0;
+            }
+        
+        }
+        
+
+        .option-3{
+            animation-name: option-3;
+        }
+
+
+        @keyframes option-3 {
+            0%{
+                background: white;
+            }
+        
+            30%{
+                background-color: white;
+                border: none;
+            }
+
+        
+            40%{
+                background: $light-blue;
+                
+            }
+        
+            50%{
+                background: $light-blue;
+                
+            }
+
+            51%{
+                border: none;
+            }
+        
+            60%{
+                background-color: white;
+            }
+        
+        
+            100%{
+                background-color: white;
+            }
+        }
+
+        // end of image & option 3
+
+
+        // image & option 4
+        .img-4{
+            z-index: 2;
+            animation-name: img-4;
+        }
+
+        @keyframes img-4 {
+            0%{
+                opacity: 100%;
+            }
+        
+            70%{
+                opacity: 100%;
+            }
+        
+            80%{
+                opacity: 0;
+            }
+        
+            100%{
+                opacity: 0;
+            }
+        
+        }
+
+        .option-4{
+            animation-name: option-4;
+        }
+
+        @keyframes option-4 {
+            0%{
+                background: white;
+            }
+        
+        
+            50%{
+                background-color: white;
+                border: none;
+            }
+        
+            60%{
+                background: $light-blue;
+                
+            }
+        
+            70%{
+                background: $light-blue;
+                
+            }
+        
+            80%{
+                background-color: white;
+                border: none;
+            }
+        
+        
+            100%{
+                background-color: white;
+            }
+        }
+        // end of image & option 4
+
+
+
+        // image & option 5
+        .img-5{
+            z-index: 1;
+            animation-name: img-5;
+        }
+
+        @keyframes img-5 {
+            0%{
+                opacity: 100%;
+            }
+        
+            20%{
+                opacity: 100%;
+            }
+        
+            40%{
+                opacity: 100%;
+            }
+        
+        
+            45%{
+                opacity: 100%;
+            }
+        
+            50%{
+                opacity: 100%;
+            }
+        
+            60%{
+                opacity: 100%;
+            }
+        
+            80%{
+                opacity: 100%;
+            }
+
+        
+        
+            100%{
+                opacity: 0;
+            }
+        
+        }
+
+
+
+        .option-5{
+            animation-name: option-5;
+        }
+
+        @keyframes option-5 {
+            0%{
+                background: white;
+            }
+
+        
+            70%{
+                background-color: #fff;
+                border: none;
+            }
+        
+            80%{
+                background: $light-blue;
+                
+            }
+
+            90%{
+                background-color: white;
+            }
+        
+        
+            100%{
+                background-color: white;
+            }
+        }
+
+        // end of image and option 5
+
+
+
+
+        .option:hover{
+                background: $light-blue !important;
+                
+            }
+
+
+
+        
+
+
+        // end of image & option 4
+
+
+        
+        // end of animation
+        
+    }
+}
+
+
+
+
+
+// =================================
+// =================================
+// END OF ANIMATED
+// =================================
+// =================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============================
+// =============================
+// ITINERARY SAMPLES
+// =============================
+// =============================
+
+
+
+.samples{
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(160deg,#E55399 30%,#ff7b33);
+
+    h2{
+        font-weight: 100;
+        font-size:3rem;
+        letter-spacing: 4px;
+        margin-bottom: 1rem;
+    }
+
+    &>h3{
+        font-weight: 100;
+    }
+
+    
+
+    // samples conatainer
+    .samples-con{
+        width: $width;
+        margin: 2rem auto 0;
+
+        
+
+        // sample
+        .sample{
+            
+            //background-image:  , url(/content/app/images-resp/mkt-images/mktlp-2020/travefy-cruise-background.jpg);
+            padding: 8rem 0;
+            position: relative;
+            margin: 2px;
+
+            .text{
+                width: 100%;
+                bottom: 20%;
+                position: absolute;
+                font-weight: thin;
+
+                a{
+                    border: 1px solid;
+                    color: #fff;
+                    display: inline-block;
+                    padding: 1rem 2rem;
+                    margin-top: 1rem;
+                    background: transparent;
+                    transition: background 0.8s ease;
+                }
+
+                a:hover{
+                    background: $transparent-black-bg;
+                }
+
+                .web-btn{
+                    border-radius: 10px 0 0 10px;
+                }
+
+                .pdf-btn{
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+        }
+        // end of sample
+
+
+        .fit{
+            background-image: linear-gradient(-40deg,rgba(229,83,153,.45),rgba(255,106,25,.55)), url(../Travefy_images/travefy-fit-background.jpg);
+            @include background-cover-center;
+        }
+        
+        .cruise{
+            background-image: linear-gradient(-40deg,rgba(229,83,153,.45),rgba(255,106,25,.55)), url(../Travefy_images/travefy-cruise-background.jpg);
+            @include background-cover-center;
+        }
+        
+        .inclusive{
+            background-image: linear-gradient(-40deg,rgba(229,83,153,.45),rgba(255,106,25,.55)), url(../Travefy_images/travefy-all-inclusive-background.jpg);
+            @include background-cover-center;
+        }
+    }
+    // end of sample container
+}
+
+
+
+
+
+// =============================
+// =============================
+// END OF ITINERARY SAMPLES
+// =============================
+// =============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =================================
+// =================================
+// PRICING
+// =================================
+// =================================
+
+
+.pricing{
+    padding: 5rem 0;
+
+    .pricing-con{
+        width: $width;
+        margin: 0 auto;
+        text-align: center;
+
+        
+
+        h2{
+            font-size: 2rem;
+            font-weight: 100;
+        }
+
+        .title{
+            
+            &>h2{
+                font-size: 2.3rem;
+                color: $light-black;
+            }
+
+            &>h3{
+                margin: 2rem 0;
+                color: $light-black;
+            }
+        }
+
+        .packages{
+            
+
+
+            .package{
+                border: $green 1px solid;
+               margin: 1rem;
+               border-radius: 10px;
+               width: 330px;
+               margin: .5rem auto;
+
+               .header{
+                padding: 1rem 0;
+                border-bottom: inherit;
+                color: $green;
+               }
+
+               .body{
+                padding: 2rem 1rem;
+
+                 h2{
+                    font-size: 3.3rem;
+                    font-weight: 100;
+                    position: relative;
+                 }
+
+                 h2::before{
+                    content: "$";
+                    font-size: 1.2rem;
+                    position: absolute;
+                    right: 11rem;
+                    top: 5px;
+
+                 }
+
+                 p{
+                    color: #9DA9AD;
+                    font-size: .8rem;
+                    font-weight: bold;
+                 }
+
+                 ul{
+                    margin: 2rem 0;
+                    line-height: 2;
+                    text-align: start;
+                    margin: 1.5rem auto;
+                    width: fit-content;
+                    font-size: 1rem;
+                    color: $light-black;
+                 }
+
+
+
+
+                 li::before{
+                    content: '✔';
+                    margin-right: 8px;
+                    color: $green;
+                    
+                 }
+
+                 a{
+                    width: 100%;
+                    padding: 1rem 0;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-bottom: 1rem;
+                    transition: background 0.3s ease;
+                 }
+
+
+                 a:hover{
+                    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.076);
+                    background: $hover-blue;
+                 }
+               }
+            }
+
+
+            .second-package{
+                border: $pink 1px solid;
+
+                .header{
+                    color: $pink;
+                }
+
+                span{
+                    color: $pink;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+    // discount
+    .discount{
+        
+        text-align: center;
+
+        span{
+            background: #e7eaea;
+            display: block;
+            padding: 1rem 0;
+            font-size: .9rem;
+        }
+
+        div{
+            margin: 1rem 0;
+            font-size: .8rem;
+            color: #9DA9AD;
+            font-weight: 600;
+        }
+
+        a{
+            color: $blue;
+        }
+    }
+    // end of discount
+}
+
+
+
+// =================================
+// =================================
+// END OF PRICING
+// =================================
+// =================================
+
+
+
+
+
+
+
+
+
+
+
+
+// ========================
+// ========================
+// LOG IN
+// ========================
+// ========================
+
+
+.login-header{
+
+    .header-con{
+       
+        a{
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+.login-form{
+    min-height: 90vh;
+    background: linear-gradient(#4783F0,#45BBFF,#39D1D9);
+    @include flex-center-center;
+    padding-top: 5rem;
+
+        form{
+            background: #fff;
+            width: 400px;
+            padding: .5rem;
+            
+            &>*{
+                margin: .8rem 0;
+            }
+
+            input{
+                border-radius: 5px;
+                display: block;
+                width: 100%;
+                height: 3rem;
+                
+                padding: .5rem;
+                border: none;
+                transition: background .5s ease;
+            }
+
+           
+
+            label{
+                font-size: .8rem;
+            }
+
+            input:focus{
+                outline: none;
+                border: #45BBFF 1px solid ;
+                caret-color: #45bbff;
+            }
+
+            input[type="button"]:hover{
+                background: $blue;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+
+}
+
+
+// ========================
+// ========================
+// END OF  LOG IN
+// ========================
+// ========================
+
 
 
 
@@ -403,8 +1559,8 @@ header{
 
 FOOTER{
     background: linear-gradient(160deg, #c09eda,#5fc4ff);
-    margin-top: 3rem;
-    padding-bottom: 2rem;
+    // margin-top: 3rem;
+    // padding-bottom: 2rem;
 
     // FOOTER CONTAINER
     .footer-con{
@@ -424,13 +1580,29 @@ FOOTER{
             }
 
             a{
-                display: block;
-                margin-bottom: 0.7rem;
+                // display: block;
+                
                 color: #fff;
                 font-size: 0.8rem;
             }
+            
+            li{
+                margin-bottom: 0.7rem;
+            }
         }
         // END OF FOOTER LINKS
+
+        .footer-imgs{
+
+            .fa-brands{
+                font-size: 2rem;
+                margin-right: 10px;
+            }
+
+            img{
+                width: 10rem;
+            }
+        }
     }
     // END OF FOOTER CONTAINER
 
@@ -439,7 +1611,11 @@ FOOTER{
         color: #fff;
         font-size: 0.9rem;
         margin: auto;
-        width: $width;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1rem 0;
+        background: rgba(21,56,77,.2);
     }
     // END OF FOOTER BOTTOM
 }

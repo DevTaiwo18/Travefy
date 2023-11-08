@@ -37,7 +37,7 @@ let mobileLinks = document.querySelector('.mobile-links')
 
 function mobileMenu(toShow){
     if(toShow == 'show'){
-        mobileLinks.style.height = '299px'
+        mobileLinks.style.height = '400px'
     } else if(toShow == 'unShow'){
         mobileLinks.style.height = 0
     }
