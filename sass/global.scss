@@ -87,20 +87,16 @@ header{
 
             // mobile menu
 
-            #toggle{
-                
-                i{
-                    font-size: 1.5rem;
-                    color: #fff;
-                    display: block;
-                    background: red;
-                }
+            .toggler{
+                width: 2rem;
+                border: 1px solid #ffffffab;
+                cursor: pointer;
 
             }
 
-            // #toggler:hover ~ .mobile-links{
-            //     height: 299px;
-            // }
+            .toggler:hover ~ .mobile-links{
+                height: 402px;
+            }
 
             .mobile-links{
                 position: absolute;
@@ -1572,7 +1568,7 @@ FOOTER{
         .footer-links{
             display: grid;
             color: #fff;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
             gap: 2rem;
 
             h3{
