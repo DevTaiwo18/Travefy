@@ -219,7 +219,7 @@ header .header-con {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40%;
+  gap: 50%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -298,7 +298,6 @@ header .header-con .header-right .lp-menu .lp-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
 }
 
 header .header-con .header-right .lp-menu .lp-links > * {
@@ -504,7 +503,6 @@ header .header-con .header-right .lp-menu .lp-links .drop-down > *:hover {
   color: #45BBFF;
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
-  padding: 1.2rem 1.7rem;
 }
 
 .iti-trusted > * .text a:hover {
@@ -1474,12 +1472,11 @@ FOOTER .footer-con .footer-imgs img {
 
 FOOTER .footer-bottom {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin: auto;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   background: rgba(21, 56, 77, 0.2);
 }
 /*# sourceMappingURL=global.css.map */

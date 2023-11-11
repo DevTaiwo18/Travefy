@@ -24,11 +24,12 @@
 <body>
     
 
-    <!-- HEADER -->
-    <header>
+   
+     <!--  HEADER -->
+     <header>
 
         <!-- header container -->
-        <section class="iti-header-con header-con">
+        <section class="header-con">
 
             <!-- header left -->
             <a href="../index.html" class="header-left">
@@ -40,10 +41,10 @@
             <!-- header right-->
             <section class="header-right">
 
-                <span id="toggler" onmouseover="mobileMenu('show')"><i class="fa-solid fa-bars" style="color: #fff; font-size: 1.5rem;"></i></span>
+                <img src="../Travefy_images/hamburger-menu.svg" alt="" id="toggler" class="toggler">
 
                 <!-- mobile links -->
-                <ul class="mobile-links" onmouseout="mobileMenu('unShow')">
+                <ul class="mobile-links">
 
                     <a href="../pages/itinerary.html">
                         <li>Itineray Management</li>
@@ -81,67 +82,20 @@
                     <!-- lp links -->
                     <ul class="lp-links">
 
-                        <!-- laptop dropper -->
-                        <li ><span class="first-dropper dropper" onmouseover="lpMenu('showFirst')" >Solutions</span>
-
-                            <!--  drop down -->
-                            <ul class="drop-down" id="first-drop-down" onmouseover="lpMenu('showFirst')" onmouseleave="lpMenu('unshowFirst')">
-                                <!-- TODO: ADD LINKS -->
-                                <a href="../pages/itinerary.html">
-                                    <li>Itineray Management</li>
-                                </a>
-
-                                <a href="../pages/proposals.html">
-                                    <li>Proposals + Quotes</li>
-                                </a>
-
-                                <a href="/pages/simple-crm.html">
-                                    <li>Simple CRM + Forms</li>
-                                </a>
-
-                                <a href="../pages/website.html">
-                                    <li>Website + Marketing</li>
-                                </a>
-                            </ul>
-                            <!-- end of drop down -->
-                        </li>
-                        <!-- end of laptop dropper -->
-
-                        <!-- laptop dropper -->
-                        <li ><span class="second-droppper dropper" onmouseover="lpMenu('showSecond')" >Solutions For</span>
-
-                            <!--  drop down -->
-                            <ul class="drop-down"  id="second-drop-down" onmouseover="lpMenu('showSecond')" onmouseleave="lpMenu('unshowSecond')">
-                                <a href="../pages/error.html">
-                                    <li>Travel Advisors</li>
-                                </a>
-
-                                <a href="../pages/error.html">
-                                    <li>Tour Operators</li>
-                                </a>
-
-                                <a href="../pages/error.html">
-                                    <li>DMCs + Onsites</li>
-                                </a>
-
-                                <a href="../pages/error.html">
-                                    <li>Tourism + DMOs</li>
-                                </a>
-
-                                <a href="../pages/error.html">
-                                    <li>Host Agencies</li>
-                                </a>
-                            </ul>
-                            <!-- end of drop down -->
-                        </li>
-                        <!-- end of laptop dropper -->
-
-                        <a href="../pages/sign-in.html">
-                            <li>Log in</li>
+                        <a href="../pages/itinerary.html">
+                            <li class="first-dropper dropper">Itinerary Management</li>
                         </a>
 
-                        <a href="../pages/trial.html" class="lp-cta">
-                            <li>Start Free trial</li>
+                        <a href="../pages/proposals.html">
+                            <li>Proposals + Quotes</li>
+                        </a>
+
+                        <a href="../pages/simple-crm.html">
+                            <li>Simple CRM + Forms</li>
+                        </a>
+
+                        <a href="../pages/sign-in.html" class="lp-cta">
+                            <li >Log in</li>
                         </a>
                     </ul>
                     <!-- end of lp links -->
